@@ -222,14 +222,10 @@ margin-bottom: 900px;
 
  body{
     overflow-x: hidden;
-    width: 100%;
-    position: relative;
+    width: 100%;    
  }
 
- .row{
-    margin-right: 0 !important;
-    margin-left: 0 !important;
- }
+
 
 
  
