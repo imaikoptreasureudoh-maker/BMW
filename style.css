@@ -203,8 +203,33 @@ margin-bottom: 900px;
     color: black;
     font-size: 15px;
  }
+ .dropdown-menu{
+    background-color: black !important;
+ }
 
+ .dropdown-item{
+    color: white !important;
+ }
  
+ .dropdown-item:hover{
+    background-color: grey !important;
+    color: black !important;
+ }
+
+ html{
+    overflow-x: hidden;
+ }
+
+ body{
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+ }
+
+ .row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+ }
 
 
  
