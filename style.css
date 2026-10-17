@@ -1,238 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+  font-family: 'inter',sans-serif;
+  font-weight: 600;
 }
 
-.icon{
-    margin-left: 180px;
-    color: white;
-}
-.bi-person{
-    margin-left: 10px;
-}
-.bi-search{
-    margin-left: 10px;
+h1, h2, h5, .navbar-brand {
+  font-family: 'orbitron', sans-serif !important;
+  font-weight: 500;
 }
 
-.bi-geo-alt{
-    margin-right: 10px;
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+  font-family: 'orbitron',sans-serif;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: #00d4ff !important;
+  text-shadow: 0 0 8px #00d4ff;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00d4ff;
+  box-shadow: 0 0 8px #00d4ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+width: 100%;
 }
 
 
-.bg-image{
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba( 0,0,0,0.6) 40%, rgba(0,0,0,0.1) 100%), url(images/BMW-SEPTEMBER2026-OFFERS-X5-xDrive40i_16to7.webp);
-    background-size:cover;
-    height: 90vh;
-    
-}
-.navbar{ border: none;}
-.navbar .container{
-    border-bottom: 1px solid white;
-    width: 95%;
-    height: 70px;
-}
-nav a {
-    color: white !important;
+.btn, .btn-rounded, button {
+  font-family: 'orbitron',sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
+/* .btn:hover, .btn-rounded:hover{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px #00d4ff, 0 0 30px #00d4ff;
+  background-color: #00d4ff !important;
+  color: black !important;
+  letter-spacing: 2px;
+} */
 
-.hero-title{
-    font-size: 2rem;
-    font-weight:300;
-}
-.hero-text{
-margin-left: 28px;
-margin-bottom: 900px;
 
-}
-
-.para{
-    color: white;
-}
-.buttons{
-    display: flex;
-    gap:5px;
-    width: 800px;
-}
-.btn{
-    width: 150px;
-    background-color: blue;
-    color: white;
-    padding: 30px;
-    height: 55px;
-}
-.products{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:100px;
-    margin: 60px;
+.hero-section {
+  min-height: 85vh;
+  background-image: url(/images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.product-text{
-    color: black;
-    font-size: 30px;
-    font-weight: 200;
+.hero-overlay {
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 10, 20, 0.9) 0%,
+    rgba(10, 10, 20, 0.6) 50%,
+    rgba(0, 212, 255, 0.15) 100%
+  );
 }
-.btn1{
-    width: 310px;
-    background-color: blue;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-.BMW-card{
-    background:linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 35%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 100%), url(images/BMW-SEPTEMBER2026-OFFERS-X3_2to3.webp);
-    height: 500px;
-    margin: 30px;
-    background-size: cover; 
-    width: 310px;
-    padding: 50px;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-.BMW-card2{
-    background:linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 35%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 100%), url(images/BMW-SEPTEMBER2026-OFFERS-330i_2to3.webp);
-    height: 500px;
-    margin: 30px;
-    background-size: cover; 
-    width: 310px;
-    padding: 50px;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.BMW-card3{
-    background:linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 35%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 100%),  url(images/BMW-SEPTEMBER2026-OFFERS-MY27-X7-NON-COOKIED-RIGHT-CARD_2to3.webp);
-    height: 500px;
-    margin: 30px;
-    background-size: cover; 
-    width: 310px;
-    padding: 50px;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.btn-bmw{
-    margin-top: 25px;
-    background-color: black;
-    color: white;
-    width: 200px;
-    padding: 10px 30px;
-    border: 1px solid white;
-}
-.span{
-    margin-bottom: 10px;
-    font-size: 15px;
-    
-}
-.my-banner{
-    background: black;
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba( 0,0,0,0.6) 40%, rgba(0,0,0,0.1) 100%),url(images/BMW-SEPTEMBER2026-OFFERS-MY25-i4M50-DESKTOP-TABLET_3to1.webp);
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-}
-
-.my-banner2{
-    background: black;
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba( 0,0,0,0.6) 40%, rgba(0,0,0,0.1) 100%), url(images/iX3-WCA-Image-Tablet-Extended-V5_3to1.webp);
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    margin-top: 60px;
-    align-items: center;
-}
-.text{
-    margin-top: 15px;
-}
-.man{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
- .btn-outline-light{
-    margin-left: 8px;
- }
-
- .my-banner3{
-    background: black;
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba( 0,0,0,0.6) 40%, rgba(0,0,0,0.1) 100%), url(images/DI23_000188971-3_3to1.webp);
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    margin-top: 60px;
-    align-items: center;
-}
-
-.link-bmw{
-    text-decoration: none;
-    color: black;
-}
-
-.footer-link{
-    display: block;
-    font-size: 15px;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 12px;
-    font-weight: 600;
-}
-
-.footer-link:hover{
-    color: blue;
-}
- .footer-heading{
-    font-size: 18px;
-    color: black;
-    font-weight: 300;
- }
- .social-icon{
-    color: black;
- }
-
- .bottom-link{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
- }
- .dropdown-menu{
-    background-color: black !important;
- }
-
- .dropdown-item{
-    color: white !important;
- }
- 
- .dropdown-item:hover{
-    background-color: grey !important;
-    color: black !important;
- }
-
- html{
-    overflow-x: hidden;
- }
-
- body{
-    overflow-x: hidden;
-    width: 100%;    
- }
-
-
-
-
- 
-
-
-
-
-
-
-
+.hero-content { position: relative; z-index: 2; }
+.search-box { border-radius: 10px; padding: 14px 25px; }
+.btn-rounded { border-radius: 50px; padding: 12px 28px; font-weight: bold; }
+.shop-card { border-radius: 15px; overflow: hidden; transition: 0.3s; border: none; }
+.shop-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.verified-badge { background: #ffc107; color: #000; font-size: 11px; font-weight: bold; border-radius: 20px; padding: 3px 10px; }
+.footer { background: #111; color: #aaa; padding: 40px 0; margin-top: 60px; }
